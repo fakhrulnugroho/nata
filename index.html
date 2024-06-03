@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nata Agency</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .hero {
+        background: url("https://via.placeholder.com/1200x400") no-repeat center center/cover;
+        height: 400px;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero h1 {
+        margin: 0;
+        font-size: 3em;
+      }
+
+      .hero p {
+        font-size: 1.2em;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .services,
+      .testimonials {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .service,
+      .testimonial {
+        background: white;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        max-width: 30%;
+      }
+
+      .testimonial p {
+        font-style: italic;
+      }
+
+      .testimonial h4 {
+        text-align: right;
+        margin-top: 10px;
+        font-style: normal;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      @media (max-width: 768px) {
+        .service,
+        .testimonial {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Nata Agency</h1>
+        <nav>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Welcome to Nata Agency</h1>
+      <p>Your success is our priority</p>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services">
+          <div class="service">
+            <h3>Service 1</h3>
+            <p>Description of service 1.</p>
+          </div>
+          <div class="service">
+            <h3>Service 2</h3>
+            <p>Description of service 2.</p>
+          </div>
+          <div class="service">
+            <h3>Service 3</h3>
+            <p>Description of service 3.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          Nata Agency is a leading agency specializing in providing top-notch services to our clients. Our mission is to help
+          businesses succeed by delivering innovative solutions tailored to their needs.
+        </p>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+          <div class="testimonial">
+            <p>"Nata Agency provided exceptional service and helped us achieve our goals."</p>
+            <h4>- Client 1</h4>
+          </div>
+          <div class="testimonial">
+            <p>"The team at Nata Agency is professional and highly skilled. Highly recommend!"</p>
+            <h4>- Client 2</h4>
+          </div>
+          <div class="testimonial">
+            <p>"Outstanding results and great communication throughout the project."</p>
+            <h4>- Client 3</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="container">
+        <p>Contact us: info@nataagency.com | +123 456 7890</p>
+        <p>&copy; 2024 Nata Agency. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
